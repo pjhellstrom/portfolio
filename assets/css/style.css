@@ -9,7 +9,8 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 25pt;
     font-weight: bold;
-    background-image: url("./assets/images/bg2.png");
+    background-image: url("../images/bg2.png");
+    background-size: contain;
     background-position: top;
     }
 
@@ -93,7 +94,7 @@ body {
 
 #main-container {
     /* background-color: rgba(52, 64, 111, 0.9); */
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #000;
 }
 
@@ -393,7 +394,7 @@ body {
     align-items: center;   
     height: 360px;
     width: 360px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 #skills-frontend h2, #skills-backend h2 {
