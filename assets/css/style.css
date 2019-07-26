@@ -9,7 +9,7 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 25pt;
     font-weight: bold;
-    background-image: url("/assets/images/bg2.png");
+    background-image: url("./assets/images/bg2.png");
     background-position: top;
     }
 
