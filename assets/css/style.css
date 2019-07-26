@@ -218,6 +218,7 @@ body {
     scroll-snap-align: start;
     overflow-y: hidden;
     height: 100vh;
+    /* scroll-snap-align: start; */
 }
 
 #main-title-wrapper {
@@ -263,8 +264,12 @@ body {
 }
 
 .next-nav-icon {
-    padding: 10px;
-    color: rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    font-size: 2.5rem;
+    color: #000;
+    -webkit-animation: bounce 2000ms ease infinite;
+    -moz-animation: bounce 2000ms ease infinite;
+    animation: bounce 2000ms ease infinite;
 }
 
 .next-nav-text {
@@ -276,6 +281,13 @@ body {
     transition: 1200ms;
 }
 
+.next-nav-icon:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+
 #work-container {
     display: flex;
     flex-direction: column;
@@ -284,6 +296,7 @@ body {
     scroll-snap-align: start;
     overflow-y: hidden;
     height: 100vh;
+    /* scroll-snap-align: start; */
 }
 
 #work-card-row {
@@ -376,14 +389,15 @@ body {
     scroll-snap-align: start;
     overflow-y: hidden;
     height: 100vh;
+    /* scroll-snap-align: start; */
 }
 
 #skills-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;    
-    width: 100%;
+    width: 800px;
     margin-top: 50px;
 }
 
@@ -410,17 +424,17 @@ body {
 #skills-frontend h2 {
     background: linear-gradient(320deg, rgb(15, 231, 104), rgb(193, 231, 15));
     background-size: 400% 400%;
-    -webkit-animation: GradientFlow 7s ease infinite;
-    -moz-animation: GradientFlow 7s ease infinite;
-    animation: GradientFlow 7s ease infinite;
+    -webkit-animation: GradientFlow 5s ease infinite;
+    -moz-animation: GradientFlow 5s ease infinite;
+    animation: GradientFlow 5s ease infinite;
 }
 
 #skills-backend h2 {
     background: linear-gradient(320deg, rgb(68, 121, 156), rgb(15, 231, 104));
     background-size: 400% 400%;
-    -webkit-animation: GradientFlow 7s ease infinite;
-    -moz-animation: GradientFlow 7s ease infinite;
-    animation: GradientFlow 7s ease infinite;
+    -webkit-animation: GradientFlow 5s ease infinite;
+    -moz-animation: GradientFlow 5s ease infinite;
+    animation: GradientFlow 5s ease infinite;
 }
 
 
@@ -451,6 +465,7 @@ body {
     scroll-snap-align: start;
     overflow-y: hidden;
     height: 100vh;
+    /* scroll-snap-align: start; */
 }
 
 #profile-wrapper {
@@ -500,6 +515,7 @@ body {
     scroll-snap-align: start;
     overflow-y: hidden;
     height: 100vh;
+    /* scroll-snap-align: start; */
 }
 
 #contact-container a {
@@ -761,6 +777,10 @@ body {
     
     .next-nav-text {
         opacity: 0;
+    }
+
+    .next-nav:hover {
+        animation-play-state: unset;
     }
     
     
@@ -1033,71 +1053,71 @@ body {
         -moz-animation: bounce 2000ms ease infinite;
         animation: bounce 2000ms ease infinite;
     }
-
-    @-webkit-keyframes bounce {
-        from,
-        20%,
-        53%,
-        80%,
-        to {
-          -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-      
-        40%,
-        43% {
-          -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          -webkit-transform: translate3d(0, -30px, 0);
-          transform: translate3d(0, -30px, 0);
-        }
-      
-        70% {
-          -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          -webkit-transform: translate3d(0, -15px, 0);
-          transform: translate3d(0, -15px, 0);
-        }
-      
-        90% {
-          -webkit-transform: translate3d(0, -4px, 0);
-          transform: translate3d(0, -4px, 0);
-        }
-      }
-      
-      @keyframes bounce {
-        from,
-        20%,
-        53%,
-        80%,
-        to {
-          -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-      
-        40%,
-        43% {
-          -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          -webkit-transform: translate3d(0, -30px, 0);
-          transform: translate3d(0, -30px, 0);
-        }
-      
-        70% {
-          -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-          -webkit-transform: translate3d(0, -15px, 0);
-          transform: translate3d(0, -15px, 0);
-        }
-      
-        90% {
-          -webkit-transform: translate3d(0, -4px, 0);
-          transform: translate3d(0, -4px, 0);
-        }
-      }
 }
 /* end Media queries */
+
+@-webkit-keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  
+  @keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
