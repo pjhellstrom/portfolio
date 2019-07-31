@@ -362,6 +362,11 @@ body {
     color: #FFF;
 }
 
+.tag-node {
+    background-color: rgb(85, 187, 44);
+    color: #FFF;    
+}
+
 #work-languages li:first-child {
     margin-left: 10px;
 }
