@@ -367,6 +367,11 @@ body {
     color: #FFF;    
 }
 
+.tag-sql {
+    background-color: rgb(70, 44, 187);
+    color: #FFF;    
+}
+
 #work-languages li:first-child {
     margin-left: 10px;
 }
